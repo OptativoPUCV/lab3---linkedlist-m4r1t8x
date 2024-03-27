@@ -60,3 +60,16 @@ Wed 27 Mar 2024 05:59:54 PM UTC:
  tests:  2|5
 total_score: 15/70
 695d3eb
+Wed 27 Mar 2024 06:00:43 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:21: error: too few arguments to function ‘createNode’
+   44 |     Node* newNode = createNode();
+      |                     ^~~~~~~~~~
+list.c:22:8: note: declared here
+   22 | Node * createNode(void * data) {
+      |        ^~~~~~~~~~
+Compilation failed
+7bb2ffa

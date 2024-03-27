@@ -41,7 +41,7 @@ void * firstList(List * list)
 {
   if (list->head == NULL)
   {
-    Node* newNode = createNode(NULL);
+    Node* newNode = createNode();
     list->head = newNode;
     list->tail = newNode;
     list->current = newNode;
