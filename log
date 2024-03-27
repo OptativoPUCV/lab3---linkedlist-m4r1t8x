@@ -295,3 +295,9 @@ list.c:83:7: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 bd4ef9f
+Wed 27 Mar 2024 07:12:47 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 25/70
+13eaedc

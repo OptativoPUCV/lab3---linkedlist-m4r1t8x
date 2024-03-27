@@ -80,7 +80,7 @@ void * lastList(List * list)
 void * prevList(List * list) 
 {
   Node* newNode = createNode(NULL);
-  int cont = 0;
+  //int cont = 0;
   if(list->current == NULL || list->current->prev == NULL)
   {
     list->current = newNode;
