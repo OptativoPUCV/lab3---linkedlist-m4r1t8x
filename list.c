@@ -80,16 +80,22 @@ void * lastList(List * list)
 void * prevList(List * list) 
 {
   Node* newNode = createNode(NULL);
-  //int cont = 0;
+  int cont = 0;
   if(list->current == NULL || list->current->prev == NULL)
   {
     list->current = newNode;
     while(list->current->prev != NULL)
     {
       list->current = list->current->prev;
+      cont++;
     }  
   }
-    return list->current->data;
+  for(int i = 0; i == cont - 1; i++)
+  {
+    list->current[i] = list->current->prev[i];
+  }
+    
+  return list->current->data;
 }
 
 void pushFront(List * list, void * data) {
