@@ -77,8 +77,19 @@ void * lastList(List * list)
   return list->tail->data;
 }
 
-void * prevList(List * list) {
-    return NULL;
+void * prevList(List * list) 
+{
+  Node* newNode = createNode(NULL);
+  int cont = 0;
+  if(list->current == NULL || list->current->prev == NULL)
+  {
+    list->current = newNode;
+    while(list->current->prev != NULL)
+    {
+      list->current = list->current->prev;
+    }  
+  }
+    return list->current->data;
 }
 
 void pushFront(List * list, void * data) {

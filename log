@@ -284,3 +284,14 @@ Wed 27 Mar 2024 07:01:48 PM UTC:
  tests:  6|4
 total_score: 25/70
 1cdcf10
+Wed 27 Mar 2024 07:12:38 PM UTC: 
+ list.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:83:7: error: unused variable ‘cont’ [-Werror=unused-variable]
+   83 |   int cont = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bd4ef9f
