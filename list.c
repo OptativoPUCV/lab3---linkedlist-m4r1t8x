@@ -55,10 +55,8 @@ void * nextList(List * list)
   if(list->current == NULL)
   {
     list->current = newNode;
-  }
-  if(list->current->next == NULL)
     list->head = list->current;
-  
+  }
   return list->current->data;
 }
 
