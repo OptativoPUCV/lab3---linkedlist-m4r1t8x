@@ -85,3 +85,15 @@ Wed 27 Mar 2024 06:02:24 PM UTC:
  tests:  2|5
 total_score: 15/70
 9bb51db
+Wed 27 Mar 2024 06:07:49 PM UTC: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:55:21: error: ‘newNode’ undeclared (first use in this function); did you mean ‘Node’?
+   55 |     list->current = newNode;
+      |                     ^~~~~~~
+      |                     Node
+list.c:55:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6359641
