@@ -71,7 +71,9 @@ void * lastList(List * list)
     list->tail = newNode;
     list->current = newNode;
   }
-  list->tail = list->tail->next;
+  else
+    list->tail = list->tail->next;
+  
   return list->tail->data;
 }
 
