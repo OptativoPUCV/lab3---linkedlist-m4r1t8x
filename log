@@ -127,3 +127,8 @@ list.c:55:21: error: ‘newNode’ undeclared (first use in this function); did 
 list.c:55:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c4c5917
+Wed 27 Mar 2024 06:09:59 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+5ce18e9
