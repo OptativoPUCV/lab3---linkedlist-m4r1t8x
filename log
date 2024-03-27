@@ -115,3 +115,15 @@ list.c:59:29: error: expected ‘;’ before ‘}’ token
       | ~                            
 Compilation failed
 98fa7b1
+Wed 27 Mar 2024 06:09:32 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:55:21: error: ‘newNode’ undeclared (first use in this function); did you mean ‘Node’?
+   55 |     list->current = newNode;
+      |                     ^~~~~~~
+      |                     Node
+list.c:55:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c4c5917
