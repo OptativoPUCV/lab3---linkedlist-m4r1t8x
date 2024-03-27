@@ -54,7 +54,6 @@ void * nextList(List * list)
   Node* newNode = createNode(NULL);
   if(list->current == NULL)
   {
-    newNode->prev = list->current;
     list->current = newNode;
   }
   if(list->current->next == NULL)
