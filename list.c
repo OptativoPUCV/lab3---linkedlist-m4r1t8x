@@ -46,10 +46,12 @@ void * firstList(List * list)
     list->tail = newNode;
     list->current = newNode;
   }
-  return list->head->data;
+  return list->current;
 }
 
-void * nextList(List * list) {
+void * nextList(List * list) 
+{
+  
     return NULL;
 }
 
