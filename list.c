@@ -111,7 +111,26 @@ void pushBack(List * list, void * data)
     pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
+void pushCurrent(List * list, void * data) 
+{
+  Node* newNode = createNode(data);
+  if(list->current == NULL)
+  {
+    list->head = newNode;
+    list->tail = newNode;
+  }
+  else if (list->current == list->tail)
+  {
+    list->tail->next = newNode;
+    newNode->prev = list->tail;
+    list->tail = newNode;
+  }
+  else
+  {
+    newNode->next = list->current->prev;
+    newNode->prev = list->current->next;
+    list->current = newNode;
+  }
 }
 
 void * popFront(List * list) {
