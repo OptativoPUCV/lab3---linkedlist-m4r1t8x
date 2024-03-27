@@ -199,3 +199,14 @@ Wed 27 Mar 2024 06:28:08 PM UTC:
  tests:  2|5
 total_score: 15/70
 0edcfcb
+Wed 27 Mar 2024 06:29:28 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:58:35: error: ‘next’ undeclared (first use in this function)
+   58 |     list->current = list->current-next;
+      |                                   ^~~~
+list.c:58:35: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+aa3f3b1
