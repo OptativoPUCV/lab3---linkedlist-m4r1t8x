@@ -62,8 +62,17 @@ void * nextList(List * list)
   return list->current->data;
 }
 
-void * lastList(List * list) {
-    return NULL;
+void * lastList(List * list) 
+{
+  Node* newNode = createNode(NULL);
+  if(list->tail == NULL)
+  {
+    list->head = newNode;
+    list->tail = newNode;
+    list->current = newNode;
+  }
+  list->tail = list->tail->next;
+  return list->tail->data;
 }
 
 void * prevList(List * list) {
