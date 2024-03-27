@@ -68,10 +68,11 @@ void * lastList(List * list)
   if(list->tail == NULL || list->tail->prev == NULL)
   {
     list->tail = newNode;
+    while(list->tail->next != NULL)
+    {
+      list->tail = list->tail->next;
+    }
   }
-  else
-    list->tail = list->tail->next;
-  
   return list->tail->data;
 }
 
