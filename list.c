@@ -52,10 +52,10 @@ void * firstList(List * list)
 void * nextList(List * list) 
 {
   Node* newNode = createNode(NULL);
-  if(list->current == NULL)
+  if(list->current == NULL || list->current->next == NULL)
   {
-    list->current = newNode;
-    list->head = list->current;
+    list->head = newNode;
+    list->current = list->head;
   }
   return list->current->data;
 }
