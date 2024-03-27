@@ -232,3 +232,17 @@ Wed 27 Mar 2024 06:48:06 PM UTC:
  1 file changed, 2 deletions(-)
  tests:  0|0
 9f46669
+Wed 27 Mar 2024 06:50:58 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:59:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+   59 |   else;
+      |   ^~~~
+list.c:60:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+   60 |     list->current = list->current->next;
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f7d518e

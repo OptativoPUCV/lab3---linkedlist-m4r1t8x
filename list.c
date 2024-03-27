@@ -56,7 +56,9 @@ void * nextList(List * list)
   {
     list->current = newNode;
   }
-  list->current = list->current->next;
+  else;
+    list->current = list->current->next;
+  
   return list->current->data;
 }
 
