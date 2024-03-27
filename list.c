@@ -51,7 +51,7 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-  Node* newNode = list->current->next;
+  Node* newNode = createNode(NULL);
   if(list->current == NULL)
     list->current = newNode;
   if(list->current->next == NULL)
