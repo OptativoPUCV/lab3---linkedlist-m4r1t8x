@@ -67,9 +67,7 @@ void * lastList(List * list)
   Node* newNode = createNode(NULL);
   if(list->tail == NULL || list->tail->prev == NULL)
   {
-    list->head = newNode;
     list->tail = newNode;
-    list->current = newNode;
   }
   else
     list->tail = list->tail->next;
