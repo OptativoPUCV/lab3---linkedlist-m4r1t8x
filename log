@@ -20,3 +20,19 @@ Wed 27 Mar 2024 05:55:23 PM UTC:
  tests:  1|5
 total_score: 10/70
 b7d1d25
+Wed 27 Mar 2024 05:55:37 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:49:10: error: ‘newNode’ undeclared (first use in this function); did you mean ‘Node’?
+   49 |   return newNode;
+      |          ^~~~~~~
+      |          Node
+list.c:49:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+   50 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+24f57c6
