@@ -92,13 +92,12 @@ void * prevList(List * list)
 void pushFront(List * list, void * data) 
 {
   Node* newNode = createNode(data);
-  while(list->current->next != NULL)
+  if(list->tail == NULL)
   {
-    list->current = list->current->next;
+    list->tail->next = newNode;
+    list->tail = newNode;
+    newNode->prev = list->tail->next;
   }
-  list->current->prev = newNode;
-  newNode->next = list->current;
-  list->current = newNode;
 }
 
 void pushBack(List * list, void * data) 
