@@ -73,6 +73,7 @@ void * lastList(List * list)
       list->tail = list->tail->next;
     }
   }
+  list->current = list->tail;
   return list->tail->data;
 }
 
