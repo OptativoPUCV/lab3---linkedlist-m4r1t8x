@@ -37,8 +37,16 @@ List * createList()
   return list;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * list) 
+{
+  if (list->head == NULL)
+  {
+    Node* newNode = createNode(NULL);
+    list->head = newNode;
+    list->tail = newNode;
+    list->current = newNode;
+  }
+  return list->head->data;
 }
 
 void * nextList(List * list) {
