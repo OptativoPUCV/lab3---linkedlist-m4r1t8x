@@ -164,6 +164,7 @@ void * popCurrent(List * list)
     list->tail->next = NULL;
     return aux->data;
   }
+  return NULL;
 }
 
 void cleanList(List * list) {
