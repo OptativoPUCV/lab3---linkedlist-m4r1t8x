@@ -46,7 +46,7 @@ void * firstList(List * list)
     list->tail = newNode;
     list->current = newNode;
   }
-  return list->head->data;
+  return list->head;
 }
 
 void * nextList(List * list) {
