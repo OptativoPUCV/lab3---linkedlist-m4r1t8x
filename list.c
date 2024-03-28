@@ -150,7 +150,7 @@ void * popCurrent(List * list)
   if(list->current == NULL)
     return NULL;
   
-  if(list->current == list->head)
+  else if(list->current == list->head)
   {
     Node* aux = list->head;
     list->head = list->head->next;
@@ -160,7 +160,7 @@ void * popCurrent(List * list)
     return aux->data;  
   }
 
-  if(list->current == list->tail)
+  else if(list->current == list->tail)
   {
     Node* aux = list->tail;
     list->tail = list->tail->prev;
@@ -177,6 +177,7 @@ void * popCurrent(List * list)
     list->current = list->current->prev;
     return aux->data;
   }
+  
   return NULL;
 }
 
