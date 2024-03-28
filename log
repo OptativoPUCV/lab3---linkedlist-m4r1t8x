@@ -709,3 +709,13 @@ Thu 28 Mar 2024 01:52:49 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 d0b09e3
+Thu 28 Mar 2024 02:00:04 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:176:27: error: expected expression before ‘;’ token
+  176 |     list->current->next = ;
+      |                           ^
+Compilation failed
+1c42317
