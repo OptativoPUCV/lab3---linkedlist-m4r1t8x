@@ -165,13 +165,14 @@ void * popCurrent(List * list)
     list->tail->next = NULL;
     return aux->data;
   }
-  if(list->current != NULL)
+  else
   {
     Node* aux = list->current;
     list->current->prev = list->current->next;
     list->current->next = list->current->prev;
     return aux->data;
   }
+  return NULL;
 }
 
 void cleanList(List * list) {
